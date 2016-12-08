@@ -1,0 +1,29 @@
+{
+	"name": "vscode-coverage",
+	"description": "View Istanbul coverage*.json files in VSCode",
+	"keywords": [
+		"vscode", "istanbul", "coverage"
+	],
+	"version": "0.0.1",
+	"publisher": "nojvek",
+	"license": "MIT",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:typescript",
+		"onLanguage:javascript"
+	],
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"vscode": "0.10.x",
+		"typescript": "^1.8.0"
+	}
+}
